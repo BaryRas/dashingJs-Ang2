@@ -7,8 +7,17 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test:cover": "rm -ef /coverage &&  ng test –no watch –code-coverage",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls,js"
   },
+
+  "husky": {
+    "hooks": {
+      "pre-commit": "commitlint -e $HUSKY_GIT_PARAMS && npm run lint"
+    }
+  },
+
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.4",
@@ -28,10 +37,11 @@
     "@angular/cli": "~8.3.3",
     "@angular/compiler-cli": "~8.2.4",
     "@angular/language-service": "~8.2.4",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "coveralls": "^3.0.6",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
