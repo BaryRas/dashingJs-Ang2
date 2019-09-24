@@ -1,5 +1,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/BaryRas/dashingJs-Ang2/badge.svg?branch=master)](https://coveralls.io/github/BaryRas/dashingJs-Ang2?branch=master)
 [![Build Status](https://travis-ci.org/BaryRas/dashingJs-Ang2.svg?branch=master)](https://travis-ci.org/BaryRas/dashingJs-Ang2)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0c5d5901d7534114ab418bc2abcd98a9)](https://www.codacy.com/manual/BaryRas/dashingJs-Ang2?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BaryRas/dashingJs-Ang2&amp;utm_campaign=Badge_Grade)
 
 # DashingJsAng2
 
