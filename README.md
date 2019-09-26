@@ -1,6 +1,5 @@
 [![Coverage Status](https://coveralls.io/repos/github/BaryRas/dashingJs-Ang2/badge.svg?branch=master)](https://coveralls.io/github/BaryRas/dashingJs-Ang2?branch=master)
 [![Build Status](https://travis-ci.org/BaryRas/dashingJs-Ang2.svg?branch=master)](https://travis-ci.org/BaryRas/dashingJs-Ang2)
-[![Known Vulnerabilities](https://snyk.io//test/github/BaryRas/dashingJs-Ang2/badge.svg?targetFile=package.json)](https://snyk.io//test/github/BaryRas/dashingJs-Ang2?targetFile=package.json)
 
 # DashingJsAng2
 
