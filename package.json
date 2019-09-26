@@ -12,11 +12,13 @@
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "build:staging": "ng build --configuration=staging --output-path=gh-pages/staging1/ --base-href /dashingJs-Ang2/staging1"
   },
+
   "husky": {
     "hooks": {
       "pre-commit": "commitlint -e $HUSKY_GIT_PARAMS && npm run lint"
     }
   },
+  
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.4",
