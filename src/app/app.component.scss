@@ -1,5 +1,6 @@
 @import "../sass/variables";
+@import "node_modules/bourbon/core/bourbon";
 
-h1 {
-    color: $h1-color;
+h2 {
+    color: $default-color;
 }
