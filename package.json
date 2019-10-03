@@ -8,13 +8,16 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "cc": "npm run prettier && npm run lint",
+    "prettier": "prettier --write src/**/*{ts,scss,md}",
     "test:cover": "rm -rf ./coverage && ng test --no-watch --code-coverage",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "build:staging": "ng build --configuration=staging --output-path=gh-pages/staging1/ --base-href /dashingJs-Ang2/staging1"
+    "build:staging": "ng build --configuration=staging --output-path=gh-pages/staging1/ --base-href /dashingJs-Ang2/staging1",
+    "pretty-quick": "pretty-quick"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "commitlint -e $HUSKY_GIT_PARAMS && npm run lint"
+      "pre-commit": "npm run pretty-quick --staged && commitlint -e $HUSKY_GIT_PARAMS && npm run lint"
     }
   },
   "private": true,
@@ -27,7 +30,11 @@
     "@angular/platform-browser": "~8.2.4",
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
+    "bootstrap": "^4.3.1",
     "bourbon": "^6.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -52,6 +59,8 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "prettier": "1.18.2",
+    "pretty-quick": "^1.11.1",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
