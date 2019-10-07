@@ -15,11 +15,13 @@
     "build:staging": "ng build --configuration=staging --output-path=gh-pages/staging1/ --base-href /dashingJs-Ang2/staging1",
     "pretty-quick": "pretty-quick"
   },
+
   "husky": {
     "hooks": {
       "pre-commit": "npm run pretty-quick --staged && commitlint -e $HUSKY_GIT_PARAMS && npm run lint"
     }
   },
+  
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.4",
