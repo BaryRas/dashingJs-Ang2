@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+@import 'node_modules/bourbon/core/bourbon';
+@import 'variables';
+@import 'bootstrap-custom';
+@import 'fonts/fonts';
+@import 'font-awesome-custom';
+
+body,
+html {
+  background-color: $bg-color;
+  font-family: 'poppins';
+  color: $default-color;
+}
