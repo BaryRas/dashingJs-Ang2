@@ -1,6 +1,8 @@
-@import "../sass/variables";
-@import "node_modules/bourbon/core/bourbon";
+@import '../sass/tools';
 
 h2 {
-    color: $default-color;
+  color: $info;
+}
+span {
+  color: $default-color;
 }
