@@ -1,8 +1,6 @@
 @import '../sass/tools';
 
-h2 {
-  color: $info;
-}
-span {
-  color: $default-color;
+:host {
+  width: 100vw;
+  height: 100vh;
 }
